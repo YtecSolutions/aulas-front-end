@@ -1,0 +1,100 @@
+/* Neste artigo faremos a Regras CSS necessárias à formatação do site. */
+
+/* Regra para página interia */
+
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../imagens/watercolor.png);
+
+
+}
+
+#container {
+    /* margin centraliza o container combinação de width e margin */
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    box-shadow: black 0 0 5px;
+    padding: 16px;
+    border-radius: 8px;
+
+}
+
+/* Regra do seletor h1 */
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: black;
+
+    padding: 10px;
+
+
+
+
+    /* Desafio: aplique as seguintes propriedades: 
+-borda em todos os lados na cor que quiser
+- sombra (na cor que quiser) no bloco virada pra dentro
+- coloque o texto no meio
+-letras maiúsculas*/
+
+    border: gray solid 4px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: white 0 0 15px inset;
+}
+
+h2 {
+
+    font: size 20px;
+    border-bottom: solid 5px;
+    border-left: dotted 5px;
+
+
+    /* margin-left: 100px; 
+ Espaçamento do h2 do lado externo  */
+
+
+    padding-left: 10px;
+    /* /Espaçamento interno do H2 */
+}
+
+/* Grupo de seletores* */
+
+h3,
+p,
+figcaption {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h3 {
+
+    /* primeiro parametro é a direção , depois são as cores */
+    padding: 10px;
+
+    /*  usar ferramentas para gradientes */
+    background: linear-gradient(to right,
+  
+
+            rgb(200, 200, 201),
+            rgb(118, 118, 119),
+            rgb(34, 33, 33));
+
+
+
+}
+.destaque{    
+    background-color: black;
+    padding: 3px;
+    color:white;
+    border: radius 4px;       
+}
+
+
+figure{
+margin: 0;
+text-align: center;
+}
+img {max-width:100%}

@@ -38,3 +38,12 @@ As regras vão valer para todas as tags elementos desta página.
 #### ID (Identificador) 
 
 Regras criadas com seletor do tipo id, são mais versáteis, ou seja, voce desenvolvedor determina onde aplicar o id em sua formatação. ** você não pode reaproveitar IDs, ou seja, seletor ID deve ser usado SOMENTE PARA UM ELEMENTO por página.
+
+### Externa
+
+Arquivo Css dedicado a elaboração de regras CSS
+
+Este arquivo será "conectado" a cada página HTML do seu site, permitidndo assim centralizar toda a estilização de um projeto.
+
+#### Sobre seletores
+
