@@ -98,3 +98,8 @@ margin: 0;
 text-align: center;
 }
 img {max-width:100%}
+
+/* Seletor descendente */
+/* Links que sao descendentes de parágrafos */
+/* Acesse p e procure por a  */
+p a{color: red;}
