@@ -24,6 +24,10 @@ body {
 
 /* Regra do seletor h1 */
 h1 {
+animation-name: caindo;
+animation-duration: 5s;
+
+
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     background-color: black;
@@ -193,13 +197,31 @@ nav a:focus {
 figure img {
 
     filter: grayscale();
-    transition: 2s;
-
-    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    transition: 15s;
+    transform: scale(0.5);
+    /* clip-path: polygon(0 0, 0% 100%, 100% 100%); */
 }
 
 
 figure img:hover {
-    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 99%, 0 2%);
+    /* clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 99%, 0 2%); */
     filter: none;
+    transform: scale(1)rotate(360deg);
+}
+
+/* /* Regras de animação  */
+
+@keyframes caindo {
+
+    /* Como começa */
+    from {
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+
+    /* Como termina */
+    to {
+        transform: translateY(1);
+
+    }
 }
