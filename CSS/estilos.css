@@ -71,7 +71,7 @@ figcaption {
 }
 
 h3 {
-border-radius: 10px;
+    border-radius: 10px;
     /* primeiro parametro é a direção , depois são as cores */
     padding: 10%;
 
@@ -123,7 +123,7 @@ ul {
 
 li {
 
-list-style-image: url(../imagens/fundo03.gif);    
+    list-style-image: url(../imagens/fundo03.gif);
 
     /* altera ou exclui marcadores */
 
@@ -131,44 +131,48 @@ list-style-image: url(../imagens/fundo03.gif);
     /* list-style-type: none; */
     line-height: 32px;
 }
+
 /* Seletor pseudo-elemento */
-li::marker{
+li::marker {
 
-/* getemoji.com ou tecla do windows + "ponto" */
+    /* getemoji.com ou tecla do windows + "ponto" */
 
-content: "🎂☂️";
+    content: "🎂☂️";
 
 }
+
 /* Regras para o menu */
-nav {text-align: center;
+nav {
+    text-align: center;
 }
-    /* Regra para os estado inicial do link */
-nav a { 
-    
+
+/* Regra para os estado inicial do link */
+nav a {
+
     text-decoration: none;
     font-weight: bold;
     color: rgb(0, 0, 17);
     background-color: rgb(145, 145, 146);
     width: 50%;
     display: inline-block;
-padding: 10px;
+    padding: 10px;
 
-/* alterando o Box Model fazendo com que padding e border não interfiram nas dimensões finais do elemento */
-box-sizing: border-box;
+    /* alterando o Box Model fazendo com que padding e border não interfiram nas dimensões finais do elemento */
+    box-sizing: border-box;
 }
 
-    
 
-    /* Seletor Pseudo-classe:first-child */
+
+/* Seletor Pseudo-classe:first-child */
 
 nav a:first-child {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
 
-    nav a:last-child {
-        border-top-right-radius: 12px;
-        border-bottom-right-radius: 12px;    
+nav a:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 
@@ -176,11 +180,26 @@ nav a:first-child {
 
 /* Regra para o estado do link acionado */
 
- /* Pseudo-classe :hover (passar o mouse
+/* Pseudo-classe :hover (passar o mouse
     Pseudo-class  :focus (receber foco) usa o teclado */
 
-nav a:hover, nav a:focus{
+nav a:hover,
+nav a:focus {
 
     background-color: gray;
     color: white;
+}
+
+figure img {
+
+    filter: grayscale();
+    transition: 2s;
+
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+
+figure img:hover {
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 99%, 0 2%);
+    filter: none;
 }
