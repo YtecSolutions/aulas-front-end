@@ -46,4 +46,10 @@ Arquivo Css dedicado a elaboração de regras CSS
 Este arquivo será "conectado" a cada página HTML do seu site, permitidndo assim centralizar toda a estilização de um projeto.
 
 #### Sobre seletores
+Regra composta por outros seletores, útil quando objetivo é aplicar uma mesma formatação em diversos elementos diferentes.
+
+
+#### Descendentes
+
+Regra para formatação de elementos que estão dentro de outros elementos, permitindo assim um grau maior de precisão ou especificidade.
 

@@ -5,7 +5,8 @@
 body {
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(../imagens/watercolor.png);
+    background-image: url(../imagens/oriental-tiles.png);
+
 
 
 }
@@ -70,36 +71,71 @@ figcaption {
 }
 
 h3 {
-
+border-radius: 10px;
     /* primeiro parametro é a direção , depois são as cores */
-    padding: 10px;
+    padding: 10%;
 
     /*  usar ferramentas para gradientes */
     background: linear-gradient(to right,
-  
+
 
             rgb(200, 200, 201),
             rgb(118, 118, 119),
             rgb(34, 33, 33));
 
 
-
 }
-.destaque{    
+
+.destaque {
     background-color: black;
     padding: 3px;
-    color:white;
-    border: radius 4px;       
+    color: white;
+    border: radius 4px;
 }
 
 
-figure{
-margin: 0;
-text-align: center;
+figure {
+    margin: 0;
+    text-align: center;
 }
-img {max-width:100%}
+
+img {
+    max-width: 100%
+}
 
 /* Seletor descendente */
 /* Links que sao descendentes de parágrafos */
 /* Acesse p e procure por a  */
-p a{color: red;}
+p a {
+    color: red;
+}
+
+
+/* Espaçamento  */
+
+ul {
+
+    /* Espaçamento  */
+    padding: 32px;
+
+}
+
+
+li {
+
+list-style-image: url(../imagens/fundo03.gif);    
+
+    /* altera ou exclui marcadores */
+
+    /* list-style-type: square; */
+    /* list-style-type: none; */
+    line-height: 32px;
+}
+/* Seletor pseudo-elemento */
+li::marker{
+
+/* getemoji.com ou tecla do windows + "ponto" */
+
+content: "🎂☂️";
+
+}
