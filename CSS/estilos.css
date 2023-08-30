@@ -139,3 +139,48 @@ li::marker{
 content: "🎂☂️";
 
 }
+/* Regras para o menu */
+nav {text-align: center;
+}
+    /* Regra para os estado inicial do link */
+nav a { 
+    
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 17);
+    background-color: rgb(145, 145, 146);
+    width: 50%;
+    display: inline-block;
+padding: 10px;
+
+/* alterando o Box Model fazendo com que padding e border não interfiram nas dimensões finais do elemento */
+box-sizing: border-box;
+}
+
+    
+
+    /* Seletor Pseudo-classe:first-child */
+
+nav a:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+    nav a:last-child {
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;    
+}
+
+
+
+
+/* Regra para o estado do link acionado */
+
+ /* Pseudo-classe :hover (passar o mouse
+    Pseudo-class  :focus (receber foco) usa o teclado */
+
+nav a:hover, nav a:focus{
+
+    background-color: gray;
+    color: white;
+}
