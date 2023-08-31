@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik+Iso&display=swap');
+
+
 /* Neste artigo faremos a Regras CSS necessárias à formatação do site. */
 
 /* Regra para página interia */
@@ -6,29 +9,33 @@ body {
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(../imagens/oriental-tiles.png);
+    background-attachment: fixed;
 
-
-
-}
+      
+    }
 
 #container {
     /* margin centraliza o container combinação de width e margin */
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0,9);
     margin: auto;
     width: 80%;
+    max-width: 800px;
+    /* Propriedade para parar de aumentar ou diminuir a imagem  */
+    min-width: 500px;
+    /* Propriedade para parar de aumentar ou diminuir a imagem  */
     box-shadow: black 0 0 5px;
     padding: 16px;
     border-radius: 8px;
-
+    
 }
 
 /* Regra do seletor h1 */
 h1 {
-animation-name: caindo;
-animation-duration: 5s;
+    animation-name: caindo;
+    animation-duration: 5s;
 
 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Rubik Iso', cursive;
     color: white;
     background-color: black;
 
@@ -225,3 +232,13 @@ figure img:hover {
 
     }
 }
+/* Pseudo-classes:
+:first-child
+:last-child 
+nth-child()*/
+li:first-child {color:red;}
+li:last-child {color:blue;}
+li:nth-child(3){color:orange;}
+li:nth-child(4){color:yellow;}
+li:nth-child(5){color:gray;}
+
