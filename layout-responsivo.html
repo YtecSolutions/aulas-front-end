@@ -8,7 +8,9 @@
     <style>
         /* regras de uso geral */
         /* alterar o  o box model para tudo */
-*{box-sizing:border-box;}
+        * {
+            box-sizing: border-box;
+        }
 
         body {
 
@@ -71,6 +73,7 @@
             header {
                 display: flex;
                 justify-content: space-between;
+                
             }
 
 
@@ -86,19 +89,45 @@
             }
         }
 
-        @media screen and (min-width: 522px) {
-            
-            #colunaA { width: 70%;}
-            #colunaB { width: 30%;}
-            #colunaC { width: 100%;}
-            
-            main { 
+        @media screen and (min-width: 600px) {
+
+            #colunaA {
+                width: 70%;
+            }
+
+            #colunaB {
+                width: 30%;
+            }
+
+            #colunaC {
+                width: 100%;
+            }
+
+            main {
                 display: flex;
                 flex-wrap: wrap;
             }
 
         }
 
+        @media screen and (min-width: 800px) {
+
+.container {
+    
+    max-width: 800px;
+    margin: auto;
+}
+header {
+                
+                height: 150px;
+            }
+#colunaA, #colunaB, #colunaC{width: 33%;}
+/* Desative o flex´wrap */
+main {flex-wrap: nowrap;
+/* gap:16px; */
+justify-content: space-between;
+
+}
     </style>
 
 </head>
