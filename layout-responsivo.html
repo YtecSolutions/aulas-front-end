@@ -5,6 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* regras de uso geral */
+        /* alterar o  o box model para tudo */
+
+
+        body {
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: lightblue;
+
+        }
+
+        .container {
+
+            background-color: whitesmoke;
+            box-shadow: black 0 0 5px;
+            padding: 5px;
+        }
+
+        body,
+        h1,
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            padding: 5px 0;
+        }
+
+        h1 {
+            background-color: pink;
+        }
+
+        nav {
+            background-color: yellow;
+        }
+
+        article {
+            padding: 8px;
+        }
+
+        #colunaA {
+            background-color: orange;
+        }
+
+        #colunaB {
+            background-color: purple;
+        }
+
+        #colunaC {
+            background-color: green;
+        }
+
+        footer {
+            background-color: gray;
+            height: 100px;
+        }
+
+        /* Regras condicionais (Media Queries) */
+
+        @media screen and (min-width:522px) {
+            header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+
+            h1 {
+                width: 40%;
+            }
+
+            nav {
+                width: 60%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+
+        @media screen and (min-width: 773px) {
+            
+            #colunaA { width: 70%;}
+            #colunaB { width: 30%;}
+            #colunaC { width: 100%;}
+            
+            main { 
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+        }
+    </style>
+
 </head>
 
 <body>
@@ -13,9 +108,9 @@
 
             <h1>Exemplo</h1>
             <nav>
-                <a href="link 1"></a>
-                <a href="link 2"></a>
-                <a href="link 3"></a>
+                <a href="">link1</a>
+                <a href="">link2</a>
+                <a href="">link3</a>
             </nav>
 
         </header>
