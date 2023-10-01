@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* regras de uso geral */
+        /* alterar o  o box model para tudo */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: lightblue;
+
+        }
+
+        .container {
+
+            background-color: whitesmoke;
+            box-shadow: black 0 0 5px;
+            padding: 5px;
+        }
+
+        body,
+        h1,
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            padding: 5px 0;
+        }
+
+        h1 {
+            background-color: pink;
+        }
+
+        nav {
+            background-color: yellow;
+        }
+
+        article {
+            padding: 8px;
+        }
+
+        #colunaA {
+            background-color: orange;
+        }
+
+        #colunaB {
+            background-color: purple;
+        }
+
+        #colunaC {
+            background-color: green;
+        }
+
+        footer {
+            background-color: gray;
+            height: 100px;
+        }
+
+        /* Regras condicionais (Media Queries) */
+
+        @media screen and (min-width:522px) {
+            header {
+                display: flex;
+                justify-content: space-between;
+                
+            }
+
+
+            h1 {
+                width: 40%;
+            }
+
+            nav {
+                width: 60%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+
+            #colunaA {
+                width: 70%;
+            }
+
+            #colunaB {
+                width: 30%;
+            }
+
+            #colunaC {
+                width: 100%;
+            }
+
+            main {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+        }
+
+        @media screen and (min-width: 800px) {
+
+.container {
+    
+    max-width: 800px;
+    margin: auto;
+}
+header {
+                
+                height: 150px;
+            }
+#colunaA, #colunaB, #colunaC{width: 33%;}
+/* Desative o flex´wrap */
+main {flex-wrap: nowrap;
+/* gap:16px; */
+justify-content: space-between;
+
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <h1>Exemplo</h1>
+            <nav>
+                <a href="">link1</a>
+                <a href="">link2</a>
+                <a href="">link3</a>
+            </nav>
+
+        </header>
+
+        <main>
+            <article id="colunaA">
+                <h2>Coluna A</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus accusamus inventore officia ipsam
+                    aperiam quasi reiciendis obcaecati dolore numquam illum perferendis voluptatibus quas nisi magni
+                    exercitationem ipsa id, eligendi iste?</p>
+            </article>
+
+            <article id="colunaB">
+                <h2>Coluna B</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus accusamus inventore officia ipsam
+                    aperiam quasi reiciendis obcaecati dolore numquam illum perferendis voluptatibus quas nisi magni
+                    exercitationem ipsa id, eligendi iste?</p>
+
+            </article>
+
+            <article id="colunaC">
+                <h2>Coluna C</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus accusamus inventore officia ipsam
+                    aperiam quasi reiciendis obcaecati dolore numquam illum perferendis voluptatibus quas nisi magni
+                    exercitationem ipsa id, eligendi iste?</p>
+            </article>
+
+        </main>
+        <footer>
+            <h2>Rodapé</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, error!</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik+Iso&display=swap');
+
+
+/* Neste artigo faremos a Regras CSS necessárias à formatação do site. */
+
+/* Regra para página interia */
+
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../imagens/oriental-tiles.png);
+    background-attachment: fixed;
+
+      
+    }
+
+#container {
+    /* margin centraliza o container combinação de width e margin */
+    background-color: rgba(255, 255, 255, 0,9);
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+    /* Propriedade para parar de aumentar ou diminuir a imagem  */
+    min-width: 500px;
+    /* Propriedade para parar de aumentar ou diminuir a imagem  */
+    box-shadow: black 0 0 5px;
+    padding: 16px;
+    border-radius: 8px;
+    
+}
+
+/* Regra do seletor h1 */
+h1 {
+    animation-name: caindo;
+    animation-duration: 5s;
+
+
+    font-family: 'Rubik Iso', cursive;
+    color: white;
+    background-color: black;
+
+    padding: 10px;
+
+
+
+
+    /* Desafio: aplique as seguintes propriedades: 
+-borda em todos os lados na cor que quiser
+- sombra (na cor que quiser) no bloco virada pra dentro
+- coloque o texto no meio
+-letras maiúsculas*/
+
+    border: gray solid 4px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: white 0 0 15px inset;
+}
+
+h2 {
+
+    font: size 20px;
+    border-bottom: solid 5px;
+    border-left: dotted 5px;
+
+
+    /* margin-left: 100px; 
+ Espaçamento do h2 do lado externo  */
+
+
+    padding-left: 10px;
+    /* /Espaçamento interno do H2 */
+}
+
+/* Grupo de seletores* */
+
+h3,
+p,
+figcaption {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h3 {
+    border-radius: 10px;
+    /* primeiro parametro é a direção , depois são as cores */
+    padding: 10%;
+
+    /*  usar ferramentas para gradientes */
+    background: linear-gradient(to right,
+
+
+            rgb(200, 200, 201),
+            rgb(118, 118, 119),
+            rgb(34, 33, 33));
+
+
+}
+
+.destaque {
+    background-color: black;
+    padding: 3px;
+    color: white;
+    border: radius 4px;
+}
+
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%
+}
+
+/* Seletor descendente */
+/* Links que sao descendentes de parágrafos */
+/* Acesse p e procure por a  */
+p a {
+    color: red;
+}
+
+
+/* Espaçamento  */
+
+ul {
+
+    /* Espaçamento  */
+    padding: 32px;
+
+}
+
+
+li {
+
+    list-style-image: url(../imagens/fundo03.gif);
+
+    /* altera ou exclui marcadores */
+
+    /* list-style-type: square; */
+    /* list-style-type: none; */
+    line-height: 32px;
+}
+
+/* Seletor pseudo-elemento */
+li::marker {
+
+    /* getemoji.com ou tecla do windows + "ponto" */
+
+    content: "🎂☂️";
+
+}
+
+/* Regras para o menu */
+nav {
+    text-align: center;
+}
+
+/* Regra para os estado inicial do link */
+nav a {
+
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 17);
+    background-color: rgb(145, 145, 146);
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+
+    /* alterando o Box Model fazendo com que padding e border não interfiram nas dimensões finais do elemento */
+    box-sizing: border-box;
+}
+
+
+
+/* Seletor Pseudo-classe:first-child */
+
+nav a:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+nav a:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+
+
+/* Regra para o estado do link acionado */
+
+/* Pseudo-classe :hover (passar o mouse
+    Pseudo-class  :focus (receber foco) usa o teclado */
+
+nav a:hover,
+nav a:focus {
+
+    background-color: gray;
+    color: white;
+}
+
+figure img {
+
+    filter: grayscale();
+    transition: 15s;
+    transform: scale(0.5);
+    /* clip-path: polygon(0 0, 0% 100%, 100% 100%); */
+}
+
+
+figure img:hover {
+    /* clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 99%, 0 2%); */
+    filter: none;
+    transform: scale(1)rotate(360deg);
+}
+
+/* /* Regras de animação  */
+
+@keyframes caindo {
+
+    /* Como começa */
+    from {
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+
+    /* Como termina */
+    to {
+        transform: translateY(1);
+
+    }
+}
+/* Pseudo-classes:
+:first-child
+:last-child 
+nth-child()*/
+li:first-child {color:red;}
+li:last-child {color:blue;}
+li:nth-child(3){color:orange;}
+li:nth-child(4){color:yellow;}
+li:nth-child(5){color:gray;}
+
